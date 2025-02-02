@@ -15,7 +15,7 @@
         "source": "https://github.com/liviu-hariton/loto-ro",
         "issues": "https://github.com/liviu-hariton/loto-ro/issues"
     },
-    "keywords": ["loto", "loterie", "loto 6/49", "loto 5/40", "laravel", "lottery"],
+    "keywords": ["loto", "loterie", "loto 6-49", "loto 5-40", "laravel", "lottery"],
     "require": {
         "php": "^8.3",
         "ext-dom": "*",
