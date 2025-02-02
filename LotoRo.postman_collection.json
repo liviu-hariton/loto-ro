@@ -1,0 +1,427 @@
+{
+	"info": {
+		"_postman_id": "ff57d271-7044-42a6-b3a4-a62061e8e824",
+		"name": "LotoRo",
+		"description": "Given the default routes, the package provides several API endpoints to access the Romanian lottery results. Feel free to update the {{api_url}} variable with your live URL.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8417645"
+	},
+	"item": [
+		{
+			"name": "Fetch results from source",
+			"item": [
+				{
+					"name": "6/49",
+					"item": [
+						{
+							"name": "All time results",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api_url}}/lotoro-649",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"lotoro-649"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Results from a given year",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api_url}}/lotoro-649?from-year=2020&from-month=1&to-year=2020&to-month=12",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"lotoro-649"
+									],
+									"query": [
+										{
+											"key": "from-year",
+											"value": "2020"
+										},
+										{
+											"key": "from-month",
+											"value": "1"
+										},
+										{
+											"key": "to-year",
+											"value": "2020"
+										},
+										{
+											"key": "to-month",
+											"value": "12"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "5/40",
+					"item": [
+						{
+							"name": "All time results",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api_url}}/lotoro-540",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"lotoro-540"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Results from a given year",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api_url}}/lotoro-540?from-year=2020&from-month=1&to-year=2020&to-month=12",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"lotoro-540"
+									],
+									"query": [
+										{
+											"key": "from-year",
+											"value": "2020"
+										},
+										{
+											"key": "from-month",
+											"value": "1"
+										},
+										{
+											"key": "to-year",
+											"value": "2020"
+										},
+										{
+											"key": "to-month",
+											"value": "12"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Export locally saved data",
+			"item": [
+				{
+					"name": "6/49 draws from a specific month",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/lotoro-draws?from-date=1998-01-01&to-date=1998-01-31&draw_type=6/49",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"lotoro-draws"
+							],
+							"query": [
+								{
+									"key": "from-date",
+									"value": "1998-01-01"
+								},
+								{
+									"key": "to-date",
+									"value": "1998-01-31"
+								},
+								{
+									"key": "draw_type",
+									"value": "6/49"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "6/49 draw details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/lotoro-draw?draw_date=1998-01-18&draw_type=6/49",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"lotoro-draw"
+							],
+							"query": [
+								{
+									"key": "draw_date",
+									"value": "1998-01-18"
+								},
+								{
+									"key": "draw_type",
+									"value": "6/49"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "First 10 most 6/49 drawn numbers in January 1998",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/lotoro-most-drawn-numbers?from-date=1998-01-01&to-date=1998-01-31&draw_type=6/49&limit=10",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"lotoro-most-drawn-numbers"
+							],
+							"query": [
+								{
+									"key": "from-date",
+									"value": "1998-01-01"
+								},
+								{
+									"key": "to-date",
+									"value": "1998-01-31"
+								},
+								{
+									"key": "draw_type",
+									"value": "6/49"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Last 6 least 6/49 drawn numbers in January 1998",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/lotoro-least-drawn-numbers?from-date=1998-01-01&to-date=1998-01-31&draw_type=6/49",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"lotoro-least-drawn-numbers"
+							],
+							"query": [
+								{
+									"key": "from-date",
+									"value": "1998-01-01"
+								},
+								{
+									"key": "to-date",
+									"value": "1998-01-31"
+								},
+								{
+									"key": "draw_type",
+									"value": "6/49"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "6/49 prizes distribution in January 1998",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/lotoro-prizes-distribution?from-date=1998-01-01&to-date=1998-01-31",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"lotoro-prizes-distribution"
+							],
+							"query": [
+								{
+									"key": "from-date",
+									"value": "1998-01-01"
+								},
+								{
+									"key": "to-date",
+									"value": "1998-01-31"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "6/49 total prize fund in January 1998",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/lotoro-total-prize-fund?from-date=1998-01-01&to-date=1998-01-31",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"lotoro-total-prize-fund"
+							],
+							"query": [
+								{
+									"key": "from-date",
+									"value": "1998-01-01"
+								},
+								{
+									"key": "to-date",
+									"value": "1998-01-31"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "6/49 total winners in January 1998",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/lotoro-total-winners?from-date=1998-01-01&to-date=1998-01-31",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"lotoro-total-winners"
+							],
+							"query": [
+								{
+									"key": "from-date",
+									"value": "1998-01-01"
+								},
+								{
+									"key": "to-date",
+									"value": "1998-01-31"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "6/49 not drawn numbers in January 1998 Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/lotoro-not-drawn-numbers?from-date=1998-01-01&to-date=1998-01-31",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"lotoro-not-drawn-numbers"
+							],
+							"query": [
+								{
+									"key": "from-date",
+									"value": "1998-01-01"
+								},
+								{
+									"key": "to-date",
+									"value": "1998-01-31"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Generate random 6/49 basic draw",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/lotoro-generate-numbers?probability=1&from-date=1998-01-01&to-date=1998-01-31",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"lotoro-generate-numbers"
+							],
+							"query": [
+								{
+									"key": "probability",
+									"value": "1"
+								},
+								{
+									"key": "from-date",
+									"value": "1998-01-01"
+								},
+								{
+									"key": "to-date",
+									"value": "1998-01-31"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "api_url",
+			"value": "http://0.0.0.0",
+			"type": "string"
+		}
+	]
+}
