@@ -1,5 +1,10 @@
 # LotoRo - Romanian Lottery Results for Laravel
 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/liviu-hariton/loto-ro.svg?style=flat-square)](https://packagist.org/packages/liviu-hariton/loto-ro)
+<a href="https://github.com/laravel"><img src="https://img.shields.io/badge/Laravel-11-f4645f.svg" /></a>
+[![Total Downloads](https://img.shields.io/packagist/dt/liviu-hariton/loto-ro.svg?style=flat-square)](https://packagist.org/packages/liviu-hariton/loto-ro)
+<a href="https://github.com/liviu-hariton/loto-ro/blob/main/LICENSE.md"><img src="https://img.shields.io/badge/license-MIT-blue" /></a>
+
 LotoRo is a Laravel package that automates the retrieval, processing, and storage of Romanian lottery results for the 6/49 and 5/40 draw types. The package fetches official draw data, extracts winning numbers and prize distributions, and provides structured access to historical lottery results via an API and CLI commands.
 
 ### Key Features
